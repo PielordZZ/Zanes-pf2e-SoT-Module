@@ -1,0 +1,96 @@
+{
+  "id": "mwangi-benefits-experimental",
+  "title": "Mwangi Benefits-experimental",
+  "version": "0.1.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors":[{"name":"Zane Zmola"}], "relationships": {
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+      "compatibility": {
+        "minimum": "4.0.6"
+      }
+    }]
+  },
+"packs": [
+    {
+      "label": "Bestiary",
+      "type": "Actor",
+      "name": "example-bestiary",
+      "path": "./packs/example-bestiary",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Feats",
+      "type": "Item",
+      "name": "example-feats",
+      "path": "./packs/example-feats",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Spells",
+      "type": "Item",
+      "name": "example-spells",
+      "path": "./packs/example-spells",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Maps",
+      "type": "Scene",
+      "name": "example-maps",
+      "path": "./packs/example-maps",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Wrath of the Mitflits",
+      "type": "JournalEntry",
+      "name": "example-wrath-of-the-mitflits",
+      "path": "./packs/example-wrath-of-the-mitflits",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    }
+],
+"packFolders":[
+  {
+    "name":"Magambya Additions",
+    "sorting":"m",
+    "packs": [
+      "mgby-features",
+      "mgby-activities"
+    ]
+    }
+  ]
+}
